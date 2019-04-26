@@ -1,0 +1,34 @@
+.header {
+    height: 95vh;
+    background-image: url("../img/alt-header2.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    &__logo-box {
+        position: absolute;
+        top: 43rem;
+        right: 55rem;
+
+        animation: moveInLeft 1s;
+    }
+
+    &__logo {
+        height: 35rem;
+        transform: rotate(21deg);
+    }
+
+    &__text-box {
+        font-size: $default-font-size;
+        font-weight: 100;
+        width: 40vh;
+        text-justify: auto;
+        font-style: italic;
+
+        position: absolute;
+        bottom: 17rem;
+        right: 10rem;
+
+        animation: moveInBottom 1s;
+    }
+}
