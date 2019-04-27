@@ -111,50 +111,87 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.btn:link, .btn:visited {
+  display: inline-block;
+  padding: 2rem 20rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 2.5rem;
+  border-radius: 10rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .5s ease;
+  color: #333;
+  border: none;
+  cursor: pointer; }
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
 .gallery {
   position: relative; }
   .gallery__picture {
-    transition: all 0.5s;
+    transition: all 0.4s ease;
     position: absolute;
     width: 45%;
     left: 20%; }
     .gallery__picture:hover {
-      transform: translateY(-0.5rem);
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
+      transform: scale(1.1);
+      box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3); }
+
+.project-box {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 6rem 2.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 3px;
+  transition: all .3s; }
+  .project-box__icon {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    background-image: url("../img/marble.jpg");
+    -webkit-background-clip: text;
+    color: transparent; }
+  .project-box:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3); }
 
 .footer {
-  background-color: #333;
+  background-color: #f7f7f7;
   padding: 5rem 0;
-  font-size: 1.4rem; }
+  font-size: 1.6rem; }
   .footer__logo-box {
     text-align: center;
-    margin-bottom: 3rem; }
+    margin-bottom: 1rem; }
   .footer__logo {
-    width: 15rem;
+    width: 25rem;
     height: auto; }
   .footer__navigation {
-    border-top: 2px solid #f7f7f7;
-    padding-top: 2rem; }
+    border-top: 2px solid #333;
+    padding-top: 1rem; }
   .footer__list {
     list-style: none; }
+  .footer__icon {
+    font-size: 4rem; }
   .footer__item {
     display: inline-block; }
     .footer__item:not(:last-child) {
-      margin-right: 2rem; }
+      margin-right: 9.4rem; }
   .footer__link:link, .footer__link:visited {
-    text-decoration: none;
-    color: #f7f7f7;
-    text-transform: uppercase;
+    color: #333;
     display: inline-block;
     transition: all .2s; }
   .footer__link:hover, .footer__link:active {
-    color: #55c57a;
     transform: rotate(5deg) scale(1.3); }
   .footer__copyright {
-    border-top: 2px solid #f7f7f7;
+    border-top: 2px solid #333;
     padding-top: 2rem;
     text-align: justify;
-    color: #f7f7f7; }
+    color: #333; }
 
 .row {
   max-width: 124rem;
@@ -230,7 +267,7 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#7ed56f, #28b485);
+  background-image: radial-gradient(#7ed56f, #062b1f);
   z-index: 100;
   transition: all .6s ease; }
 
@@ -269,7 +306,7 @@ body {
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
-  color: #55c57a;
+  color: #094b1f;
   transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
@@ -282,3 +319,8 @@ body {
 .section-about {
   background-color: #f7f7f7;
   padding: 10rem 0 15rem 0; }
+
+.section-projects {
+  padding: 10rem 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/projects-background.jpg);
+  background-size: cover; }
