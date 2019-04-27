@@ -190,7 +190,6 @@ body {
   .footer__copyright {
     border-top: 2px solid #333;
     padding-top: 2rem;
-    text-align: justify;
     color: #333; }
 
 .row {
@@ -229,11 +228,11 @@ body {
   position: relative; }
   .header__logo-box {
     position: absolute;
-    top: 43rem;
-    right: 55rem;
+    top: 33rem;
+    right: 40rem;
     animation: moveInLeft 1s; }
   .header__logo {
-    height: 35rem;
+    height: 27rem;
     transform: rotate(21deg); }
   .header__text-box {
     font-size: 1.6rem;
@@ -242,8 +241,8 @@ body {
     text-justify: auto;
     font-style: italic;
     position: absolute;
-    bottom: 17rem;
-    right: 10rem;
+    bottom: 15rem;
+    right: 7rem;
     animation: moveInBottom 1s; }
 
 .navigation__checkbox {

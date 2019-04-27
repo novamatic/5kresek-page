@@ -7,14 +7,21 @@
 
     &__logo-box {
         position: absolute;
-        top: 43rem;
-        right: 55rem;
+        // 1920x1080
+        // top: 43rem;
+        // right: 55rem;
 
+        top: 33rem;
+        right: 40rem;
         animation: moveInLeft 1s;
     }
 
     &__logo {
-        height: 35rem;
+        // 1920x1080
+        // height: 35rem;
+
+        // 1440x900
+        height: 27rem;
         transform: rotate(21deg);
     }
 
@@ -26,8 +33,11 @@
         font-style: italic;
 
         position: absolute;
-        bottom: 17rem;
-        right: 10rem;
+        // 1920x1080
+        // bottom: 17rem;
+        // right: 10rem;
+        bottom: 15rem;
+        right: 7rem;
 
         animation: moveInBottom 1s;
     }
