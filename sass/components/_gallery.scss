@@ -1,0 +1,17 @@
+.gallery {
+    position: relative;
+    
+
+    &__picture {
+        transition: all 0.5s;
+
+        position: absolute;
+        width: 45%;
+        left: 20%;
+
+        &:hover {
+            transform: translateY(-0.5rem);
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+        }
+    }
+}
